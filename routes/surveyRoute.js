@@ -7,6 +7,10 @@ const surveyTemplate = require('../services/emailTemplate/surveyTemplate');
 const Survey = mongoose.model('surveys');
 
 module.exports = app => {
+    app.get('/api/surveys/thank', (req, res) => {
+        res.send('Thank you');
+    });
+
     app.post('/api/surveys', requireLogin, requireCredits, async (req, res) => {
         const {title, subject, body, recipients } = req.body;
 
