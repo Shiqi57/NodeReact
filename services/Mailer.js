@@ -51,4 +51,4 @@ class Mailer extends helper.Mail {
 
 }
 
-module.export = Mailer;
+module.exports = Mailer;
