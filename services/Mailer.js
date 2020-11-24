@@ -18,8 +18,8 @@ class Mailer extends helper.Mail {
     }
 
     formatAddresses(recipients){
-        return recipients.map(({ emial }) => {
-            return new helper.Email(emial);
+        return recipients.map(({ email }) => {
+            return new helper.Email(email);
         });
     }
 
